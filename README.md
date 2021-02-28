@@ -52,9 +52,16 @@
 - 2. **修改init_by_lua.lua：**
  
    (实例化ConfigService和Config的操作需要在init_by_lua阶段完成，如果apollo服务异常，会自动宣告重启失败,保证服务不受apollo影响)
-
+   (启动Openresty特权进程)
 
 ```lua
+   local process = require "ngx.process"
+   local ok, err = process.enable_privileged_agent()
+   -- 检查是否启动成功
+   if not ok then
+      ngx.log(ngx.ERR, "create privileged process failed")
+      error("create privileged process failed")
+   end
    -- 获取ConfigService对象,代表一个app_id对应的配置, zdao_midservice为app_id，为全局变量
    MidConfigServive = require "libs.agollo.configService".new("zdao_midservice")
   
