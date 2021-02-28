@@ -1,4 +1,4 @@
-[![Alt text](https://img.shields.io/static/v1?label=Language&message=lua&color=blue)](http://www.lua.org/)![Alt text](https://img.shields.io/static/v1?label=Release&message=V1.0.0&color=yellow)[![Alt text](https://img.shields.io/static/v1?label=Blog&message=csdn&color=blue)](https://blog.csdn.net/weixin_40783338?spm=1000.2115.3001.5343)
+[![Alt text](https://img.shields.io/static/v1?label=Language&message=lua&color=blue)](http://www.lua.org/)![Alt text](https://img.shields.io/static/v1?label=Release&message=V1.0.0&color=yellow)[![Alt text](https://img.shields.io/static/v1?label=Blog&message=csdn&color=blue)](https://blog.csdn.net/weixin_40783338?spm=1000.2115.3001.5343)[![Alt text](https://img.shields.io/static/v1?label=openresty&message=Nginx&color=green)](https://github.com/openresty/lua-nginx-module)
 
 
 
